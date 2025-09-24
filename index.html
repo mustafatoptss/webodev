@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mustafa Ismail Toptaş — Portföy</title>
+    <meta
+      name="description"
+      content="Mustafa Ismail Toptaş - Portföy. Mysteria & Calmind projeleri."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#hero">Mustafa İsmail Toptaş</a>
+
+        <nav class="nav" aria-label="Ana gezinme">
+          <a href="#about">Hakkımda</a>
+          <a href="#projects">Projeler</a>
+          <a href="#skills">Yetenekler</a>
+          <a href="#contact" class="cta">İletişim</a>
+        </nav>
+
+        <button
+          id="mobile-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="mobile-toggle"
+          aria-label="Menüyü aç"
+        >
+          ☰
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#skills">Yetenekler</a>
+        <a href="#contact">İletişim</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-card">
+            <div class="avatar-wrap">
+              <img
+                src="images/image.png"
+                alt="Mustafa Ismail Toptaş profil fotoğrafı"
+                class="avatar"
+              />
+            </div>
+
+            <div class="hero-info">
+              <h1 id="hero-title">
+                Merhaba, ben <span class="accent">Mustafa</span>
+              </h1>
+              <p class="lead">
+                Frontend & Mobil geliştirici — temiz UI, performans ve
+                kullanılabilirlik odaklı projeler geliştiriyorum.
+              </p>
+
+              <p class="mini">
+                İlgi alanlarım: kullanıcı deneyimi, performans optimizasyonu,
+                mobil-first çözümler.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn">Projeler</a>
+                <a href="#contact" class="btn ghost">İletişim</a>
+              </div>
+
+              <ul class="meta">
+                <li><strong>Ad:</strong> Mustafa İsmail Toptaş</li>
+                <li><strong>Okul No:</strong> 2221032006</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="intro">
+            <h2>Hakkımda</h2>
+            <p>
+              Bilgi: HTML, CSS, JS ile başlayan yolculuğum; React, React Native
+              ve modern araçlarla devam ediyor. Tasarım ve kullanılabilirlik her
+              zaman önceliğimdir. Bu portföyde yaptığım örnek projeler ve
+              yeteneklerimi görebilirsin.
+            </p>
+
+            <p class="section-sub">
+              Kısa bağlantılar: <a href="#skills">Yetenekler</a> ·
+              <a href="#projects">Projeler</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section
+        id="projects"
+        class="projects container"
+        aria-labelledby="projects-title"
+      >
+        <h2 id="projects-title">Projeler</h2>
+        <p class="section-sub">
+          Öne çıkan projelerim — kısa açıklama, görsel ve (gerektiğinde) video
+          içerir.
+        </p>
+
+        <div class="projects-grid">
+          <!-- MYSTERIA -->
+          <article class="project-card" aria-labelledby="mysteria-title">
+            <div class="project-media">
+              <img src="images/project3.png" alt="Mysteria proje görseli" />
+            </div>
+
+            <div class="project-body">
+              <h3 id="mysteria-title">Callmind</h3>
+              <p class="project-desc">
+                Psikolojide teknolojik uygulamalar alanında finale kaldığımız
+                teknofest projemiz.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">TailwindCSS</span>
+              </div>
+
+              <div class="project-links">
+                <a class="link" href="#" aria-label="Mysteria canlı önizleme"
+                  >Canlı</a
+                >
+                <a class="link" href="#" aria-label="Mysteria kaynak kodu"
+                  >Kod</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- CALMIND (contains image + video) -->
+          <article class="project-card" aria-labelledby="calmind-title">
+            <div
+              class="project-media video-media"
+              data-video-src="images/video.mp4"
+              aria-hidden="false"
+            >
+              <img
+                src="images/mysteria.jpg"
+                alt="Calmind görseli (poster)"
+                class="video-poster"
+              />
+              <button class="video-play" aria-label="Videoyu oynat">▶</button>
+              <video
+                class="project-video"
+                preload="metadata"
+                poster="images/project3.png"
+                tabindex="0"
+              >
+                <source src="images/video.mp4" type="video/mp4" />
+                Tarayıcınız video etiketini desteklemiyor.
+              </video>
+            </div>
+
+            <div class="project-body">
+              <h3 id="calmind-title">Mysteria</h3>
+              <p class="project-desc">
+                Arkadaşlarınızla oynayabileceğiniz modern bir dedektiflik oyunu.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+                <a class="link" href="#" aria-label="Calmind canlı önizleme"
+                  >Canlı</a
+                >
+                <a class="link" href="#" aria-label="Calmind kaynak kodu"
+                  >Kod</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        id="skills"
+        class="skills container"
+        aria-labelledby="skills-title"
+      >
+        <h2 id="skills-title">Yetenekler</h2>
+        <p class="section-sub">Kullandığım teknolojiler ve araçlar</p>
+
+        <ul class="skills-grid" role="list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (JS)</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>TailwindCSS</li>
+          <li>Bootstrap</li>
+          <li>Node.js</li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="contact container"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title">İletişim</h2>
+        <p>
+          Projeler hakkında konuşmak istersen bana yaz —
+          <a href="mailto:mail@ornek.com">mail@ornek.com</a>
+        </p>
+
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+          onsubmit="return false;"
+        >
+          <label>
+            <span>İsim</span>
+            <input type="text" name="name" placeholder="Adın" required />
+          </label>
+
+          <label>
+            <span>E-posta</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="mail@ornek.com"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Mesaj</span>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Kısa mesaj..."
+              required
+            ></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Gönder</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p class="copyright">
+          <button
+            id="copy-btn"
+            class="copy-symbol"
+            aria-label="Ad ve okul numaramı kopyala"
+          >
+            ©
+          </button>
+          <span class="copy-text"> Mustafa İsmail Toptaş — 2221032006</span>
+        </p>
+
+        <div class="socials">
+          <a href="https://github.com/mustafatoptss" aria-label="GitHub"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/mustafa-ismail-topta%C5%9F-a38784211/"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+
+      <div id="toast" role="status" aria-live="polite" class="toast" hidden>
+        Bilgiler kopyalandı
+      </div>
+    </footer>
+
+    <script>
+      // Mobil menü toggle
+      (function () {
+        const toggle = document.getElementById("mobile-toggle");
+        const menu = document.getElementById("mobile-menu");
+        toggle.addEventListener("click", () => {
+          const expanded = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", String(!expanded));
+          if (menu.hasAttribute("hidden")) menu.removeAttribute("hidden");
+          else menu.setAttribute("hidden", "");
+        });
+      })();
+
+      // Dinamik yıl ekle (opsiyonel - footer görünümde yıl yok ama istersen)
+      // document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Video oynatma - tıklayınca oynat / durdur
+      (function () {
+        const videoContainers = document.querySelectorAll(".video-media");
+        videoContainers.forEach((container) => {
+          const video = container.querySelector(".project-video");
+          const poster = container.querySelector(".video-poster");
+          const playBtn = container.querySelector(".video-play");
+
+          // hide native controls initially
+          video.controls = false;
+          video.style.display = "none"; // start hidden; poster visible
+
+          function showVideoAndPlay() {
+            poster.style.display = "none";
+            playBtn.style.display = "none";
+            video.style.display = "block";
+            video.controls = true;
+            video.play().catch(() => {
+              /* autoplay blocked */
+            });
+          }
+
+          function togglePlayPause() {
+            if (video.paused) {
+              showVideoAndPlay();
+            } else {
+              video.pause();
+            }
+          }
+
+          // clicking poster or play button shows video and plays
+          playBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            showVideoAndPlay();
+          });
+          poster.addEventListener("click", showVideoAndPlay);
+
+          // clicking video toggles pause/play
+          video.addEventListener("click", () => {
+            if (video.paused) video.play();
+            else video.pause();
+          });
+
+          // when video ends, show poster & play button again
+          video.addEventListener("ended", () => {
+            video.controls = false;
+            video.style.display = "none";
+            poster.style.display = "block";
+            playBtn.style.display = "flex";
+          });
+        });
+      })();
+
+      // Copy to clipboard for footer (copies name + number)
+      (function () {
+        const copyBtn = document.getElementById("copy-btn");
+        const toast = document.getElementById("toast");
+        const textToCopy = "Mustafa Ismail Toptaş — 2221032006";
+
+        function showToast(msg) {
+          toast.textContent = msg;
+          toast.hidden = false;
+          toast.style.opacity = "1";
+          clearTimeout(window._toastTimeout);
+          window._toastTimeout = setTimeout(() => {
+            toast.style.opacity = "0";
+            setTimeout(() => (toast.hidden = true), 300);
+          }, 1800);
+        }
+
+        copyBtn.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText(textToCopy);
+            showToast("Ad ve okul numaran kopyalandı ✓");
+          } catch (err) {
+            // fallback
+            const ta = document.createElement("textarea");
+            ta.value = textToCopy;
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+              document.execCommand("copy");
+              showToast("Ad ve okul numaran kopyalandı ✓");
+            } catch (e) {
+              showToast("Kopyalama başarısız");
+            }
+            ta.remove();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
